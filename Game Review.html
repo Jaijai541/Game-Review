@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pingkian's Ultimate Game Review Hub</title>
+    <link rel="stylesheet" type="text/css" href="stylesg.css"/> 
+    <script>
+        function goToGameDescription(gameName) {
+            let gameDescriptionPages = {
+                "The Legend of Zelda: Tears of the Kingdom": "zelda.html",
+                "Cyberpunk 2077": "cyberpunk.html",
+                "Baldur's Gate 3": "baldurs.html",
+                "Mobile Legends: Bang Bang": "ML.html",
+                "Honkai: Star Rail": "hsr.html",
+                "Wuthering Waves": "wuwa.html",
+                "Minecraft": "mc.html",
+                "Reverse: 1999": "r1999.html"
+            };
+
+            if (gameDescriptionPages[gameName]) {
+                window.location.href = gameDescriptionPages[gameName];
+            } else {
+                alert("Description not available.");
+            }
+        }
+
+        function navigatePage(page) {
+            let pageURLs = {
+                "Home": "Game Review.html",
+                "Socials": "#socials-section",
+                "About": "About.html"
+            };
+
+            if (pageURLs[page]) {
+                if (page === "#socials-section"){
+                    window.location.href = pageURLs[page];
+                } else {
+                    window.location.href = pageURLs[page];
+                }
+
+            } else {
+                alert("Page not available."); 
+            }
+        }
+
+
+    </script>
+</head>
+<body>
+
+    <header id="head">
+        <h1>Cir Pink's</h1>
+        <p>Your Ultimate Game Review Hub</p>
+    </header>
+
+    <nav>
+        <ul>
+            <a href="#" onclick="navigatePage('Home')">Home</a>
+            <a href="#socials-section" onclick="navigatePage('Socials')">Socials</a>
+            <a href="#" onclick="navigatePage('About')">About</a>
+        </ul>
+    </nav>
+
+    <div class="container">
+
+        <div class="game-review" onclick="goToGameDescription('The Legend of Zelda: Tears of the Kingdom')">
+            <img class="game1" src="placeholderpics/placeholder_game_image1.jpg" alt="Game 1">
+
+            <table>
+                <th class="th">
+                    <h2 style="font-size: 18px">The Legend of Zelda: Tears of the Kingdom</h2>
+                </th>
+            </table>
+
+            <table>
+                <td class="td">
+                    An epic adventure across the land of Hyrule, filled with exploration, puzzles, and thrilling combat.                
+                </td>
+            </table>
+
+            
+            <footer class="rate"><strong>Rating:</strong> <span class="rating">★★★★★</span></footer>
+        </div>
+
+        <div class="game-review" onclick="goToGameDescription('Cyberpunk 2077')">
+            <img class="game2" src="placeholderpics/placeholder_game_image2.jpg" alt="Game 2">
+            
+            <table>
+                <th class="th">
+                    <h2>Cyberpunk 2077</h2>
+                </th>
+            </table>
+
+            <table>
+                <td class="td">
+                    A futuristic RPG set in the sprawling metropolis of Night City, where you play as a mercenary seeking to make a name for yourself.
+                </td>
+            </table>
+
+            <footer class="rate"><strong>Rating:</strong> <span class="rating">★★★★☆</span></footer>
+        </div>
+
+        <div class="game-review" onclick="goToGameDescription('Baldur\'s Gate 3')">
+            <img  class="game3" src="placeholderpics/placeholder_game_image3.jpg" alt="Game 3">
+
+            <table>
+                <th class="th">
+                    <h2>Baldur's Gate</h2>
+                </th>
+            </table>
+
+            <table>
+                <td class="td">
+                    A deep and immersive RPG based on the Dungeons & Dragons universe, with rich storytelling and tactical combat.
+                </td>
+            </table>
+
+            <footer class="rate"><strong>Rating:</strong> <span class="rating">★★★★★</span></footer>
+        </div>
+
+        <div class="game-review" onclick="goToGameDescription('Mobile Legends: Bang Bang')">
+            <img  class="game4" src="placeholderpics/placeholder_game_image4.jpg" alt="Game 4">
+
+            <table>
+                <th class="th">
+                    <h2 style="font-size: 19.70px">Mobile Legends: Bang Bang</h2>
+                </th>
+            </table>
+
+            <table>
+                <td class="td">
+                    A fast-paced multiplayer online battle arena (MOBA) game where players engage in 5v5 matches, showcasing teamwork and strategy to destroy the enemy base while defending their own.                
+                </td>
+            </table>
+
+            <footer class="rate"><strong>Rating:</strong> <span class="rating">★★★★☆</span></footer>
+            
+        </div>
+
+        <div class="game-review" onclick="goToGameDescription('Honkai: Star Rail')">
+            <img class="game5" src="placeholderpics/placeholder_game_image5.jpg" alt="Game 5">
+
+            <table>
+                <th class="th">
+                    <h2>Honkai: Star Rail</h2>
+                </th>
+            </table>
+
+            <table>
+                <td class="td">
+                    A strategy-RPG title in the Honkai series that takes players on a cosmic adventure across the stars. Hop aboard the Astral Express and experience the galaxy's infinite wonders on this journey filled with adventure and thrill.                
+                </td>
+            </table>          
+
+            <footer class="rate"><strong>Rating:</strong> <span class="rating">★★★★☆</span></footer>
+        </div>
+
+        <div class="game-review" onclick="goToGameDescription('Wuthering Waves')">
+            <img class="game6" src="placeholderpics/placeholder_game_image6.jpg" alt="Game 6">
+            <table>
+                <th class="th">
+                    <h2>Wuthering Waves</h2>
+                </th>
+            </table>
+
+            <table>
+                <td class="td">
+                    An open-world action RPG that immerses players in a post-apocalyptic setting, where they explore vast landscapes, battle enemies, and uncover mysteries through engaging quests.
+                </td>
+            </table>
+                        
+            <footer class="rate"><strong>Rating:</strong> <span class="rating">★★★★★</span></footer>
+        </div>
+
+        <div class="game-review" onclick="goToGameDescription('Minecraft')">
+            <img  class="game7" src="placeholderpics/placeholder_game_image7.jpg" alt="Game 7">
+            <table>
+                <th class="th"> 
+                    <h2>Minecraft</h2>
+                </th>
+            </table>
+
+            <table>
+                <td class="td">
+                    A sandbox game where players can unleash their creativity by building, exploring, and surviving in a blocky, procedurally-generated world filled with endless possibilities.                
+                </td>
+            </table>
+
+            <footer class="rate"><strong>Rating:</strong> <span class="rating">★★★★★</span></footer>
+        </div>
+
+        <div class="game-review" onclick="goToGameDescription('Reverse: 1999')">
+            <img  class="game8" src="placeholderpics/placeholder_game_image8.jpg" alt="Game 8">
+            <table>
+                <th class="th">
+                    <h2>Reverse: 1999</h2>
+                </th>
+            </table>
+
+            <table>
+                <td class="td">
+                    A story-driven strategic RPG where players traverse between timelines, unraveling mysteries and engaging in turn-based battles in a world filled with magical and surreal elements.
+                </td>
+            </table>
+
+            <footer class="rate"><strong>Rating:</strong> <span class="rating">★★★★★</span></footer>
+        </div>
+
+    </div>
+
+    <footer id="socials-section">
+        <p>Connect with Us:</p>
+        <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a> | <a href="#">YouTube</a>
+        <p>&copy; 2025 Cir Pink's. All rights reserved.</p>
+    </footer>
+
+    <button onclick="navigatePage('Home')" class="homes">↑</button>
+
+</body>
+</html>

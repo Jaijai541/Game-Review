@@ -1,0 +1,135 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background-image: -moz-linear-gradient(#000,#0a001a,#060020);
+    color: #ffffff;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+header {
+    background-color: #000;
+    background-image: linear-gradient(to bottom right, rgb(18, 1, 44), rgb(0, 0, 0), rgb(27, 18, 46));
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+nav {
+    background-color: #0a0a0a;
+    color: #fff;
+    padding: 0.5em 0;
+    text-align: center;
+}
+
+nav a { 
+    color: #fff; 
+    text-decoration: none; 
+    padding: 0 1em; 
+}
+
+nav a:hover { 
+    background-color: #555; 
+}
+
+.review-content { 
+    width: 80%; 
+    margin: 20px auto; 
+    padding-bottom: 2%;
+}
+
+h2 {
+    font-style: italic;
+}
+
+.rating {
+    color: #ff9900;
+}
+
+.video { 
+    display: flex; 
+    justify-content: space-around; 
+}
+
+p {
+    padding-bottom: 1%;
+}
+.game-images img { 
+    max-width: 30%; 
+    height: auto; 
+}
+        
+.review-comments { 
+    margin-top: 20px; 
+}
+        
+.review-comment { 
+    border: 1px solid #ddd; 
+    padding: 10px; 
+    margin-bottom: 10px; 
+}
+        
+footer {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+#socials-section { 
+    padding-top: 20px; 
+}
+
+#socials-section a { 
+    color: #fff; 
+    text-decoration: none; 
+    margin: 0 10px; 
+}
+        
+#socials-section a:hover { 
+    text-decoration: underline; 
+}
+        
+.play-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Blue button */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.play-button:hover {
+    background-color: #007bff; /* Darker blue on hover */
+}
+
+input {
+    background-image: -moz-linear-gradient(#000,#0a001a,#060020);
+    color:#ffffff
+
+}
+
+select {
+    background: #000000;
+    background-image: -moz-linear-gradient(#000,#0a001a,#060020);
+    color:#ffffff;
+
+}
+
+.submit {
+    background: #000000;
+    color:#ffffff;
+    height: 25px;
+    width: 150px;
+
+}

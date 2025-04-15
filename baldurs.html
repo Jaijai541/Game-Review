@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baldur's Gate - Review</title>
+    <link rel="stylesheet" type="text/css" href="stylesz.css"/>
+    <style>
+        
+    </style>
+    <script>
+        function navigatePage(page) {
+            let pageURLs = {
+                "Home": "Game Review.html",
+                "Socials": "#socials-section",
+                "About": "About.html"
+            };
+
+            if (pageURLs[page]) {
+                if (page === "#socials-section"){
+                    window.location.href = pageURLs[page];
+                } else {
+                    window.location.href = pageURLs[page];
+                }
+
+            } else {
+                alert("Page not available.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Cir Pink's</h1>
+        <p>Your Ultimate Game Review Hub</p>
+    </header>
+    <nav>
+        <ul>
+            <a href="#" onclick="navigatePage('Home')">Home</a>
+            <a href="#socials-section" onclick="navigatePage('Socials')">Socials</a>
+            <a href="#" onclick="navigatePage('About')">About</a>
+        </ul>
+    </nav>
+    <div class="review-content">
+        <h1>Baldur's Gate</h1>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/1T22wNvoNiU?si=1y7_opdj-1j35ucZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <h2>Description</h2>
+        <p>Baldur's Gate 3 is a sprawling, story-rich RPG based on the Dungeons & Dragons 5th Edition ruleset. It features deep character customization, tactical turn-based combat, and a branching narrative driven by player choices.</p>
+        
+        <h2>Story</h2>
+        <p>Begins with you and others being captured by Mind Flayers, who implant you with tadpoles that will transform you into one of them. After a ship crash, you must race against time to find a cure, forming alliances and making difficult choices that shape the fate of the Forgotten Realms. The game explores themes of corruption, power, and the struggle against inevitable change.</p>
+       
+        <h2>Review</h2>
+        <p><strong>Rating:</strong> <span class="rating">★★★★★</span></p>
+        
+        <h2>Platform</h2>
+        <ul>
+            <li>PC</li>
+            <li>PS5</li>
+            <li>Xbox: Series X</li>
+        </ul>
+
+        <h2>Device Requirement</h2>
+        <p>On PC</p>
+        <ul>
+            <li>Windows 10 64-bit</li>
+            <li>Intel I5 4690 or AMD FX 8350</li>
+            <li>8 GB RAM</li>
+            <li>Nvidia GTX 970 / RX 480 (4GB+ of VRAM)</li>
+        </ul>
+
+        <a href="https://baldursgate3.game/" class="play-button">Play the Game</a>
+        <br></br>
+        <div class="review-comments">
+            <h3>User Comments:</h3>
+            <div class="review-comment">
+                <p>"This game is AWESOME!! The story is very twisty and interesting."</p>
+                <p> - User1</p>
+            </div>
+            <div class="review-comment">
+                <p>"The gameplay are challenging and the combat is so engaging!"</p>
+                <p> - User2</p>
+            </div>
+            <div class="review-comment">
+                <p>"I loved the characters."</p>
+                <p> - User3</p>
+            </div>
+        </div>
+
+        <div>
+            <label for="usercomment"><h4>Add a Comment</h4></label>
+            <input type="text" id="usercomment" name="usercomment" style="width:300px; height: 30px; font-size: 20px;" placeholder="....">
+            <br>
+            <br>
+            <label for="star"></label>
+            <select id="star" name="star">
+                <option value="5">★★★★★</option>
+                <option value="4">★★★★</option>
+                <option value="3">★★★</option>
+                <option value="2">★★</option>
+                <option value="1">★</option>
+                <option value="0">☆</option>
+            </select>
+            <br>
+            <br> <input class="submit" type="submit">
+        </div>
+        
+    </div>
+    <footer id="socials-section">
+        <p>Connect with Us:</p>
+        <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a> | <a href="#">YouTube</a>
+        <p>&copy; 2025 Cir Pink's. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Legend of Zelda: Tears of the Kingdom - Review</title>
+    <link rel="stylesheet" type="text/css" href="stylesz.css"/>
+    <style>
+        
+    </style>
+    <script>
+        function navigatePage(page) {
+            let pageURLs = {
+                "Home": "Game Review.html",
+                "Socials": "#socials-section",
+                "About": "About.html"
+            };
+
+            if (pageURLs[page]) {
+                if (page === "#socials-section"){
+                    window.location.href = pageURLs[page];
+                } else {
+                    window.location.href = pageURLs[page];
+                }
+
+            } else {
+                alert("Page not available.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Cir Pink's</h1>
+        <p>Your Ultimate Game Review Hub</p>
+    </header>
+    <nav>
+        <ul>
+            <a href="#" onclick="navigatePage('Home')">Home</a>
+            <a href="#socials-section" onclick="navigatePage('Socials')">Socials</a>
+            <a href="#" onclick="navigatePage('About')">About</a>
+        </ul>
+    </nav>
+    <div class="review-content">
+        <h1>The Legend of Zelda: Tears of the Kingdom</h1>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/uHGShqcAHlQ?si=_iiRizJB0U-RuWpO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <h2>Description</h2>
+        <p>An epic adventure across the land of Hyrule, filled with exploration, puzzles, and thrilling combat.</p>
+
+        <h2>Story</h2>
+        <p>The story follows Link's journey to save Hyrule from a mysterious threat...</p>
+
+        <h2>Review</h2>
+        <p><strong>Rating:</strong> <span class="rating">★★★★★</span></p>
+
+        <h2>Platform</h2>
+        <ul>
+            <li>PC</li>
+            <li>Nintendo Switch</li>
+        </ul>
+
+        <h2>Device Requirement</h2>
+        <p>On PC</p>
+        <ul>
+            <li>64-bit processor</li>
+            <li>Intel Core i5 or AMD Ryzen 3</li>
+            <li>12 GB RAM</li>
+        </ul>
+
+        
+
+        <a href="https://zelda.nintendo.com/tears-of-the-kingdom/" class="play-button">Play the Game</a>
+        <br></br>
+        <div class="review-comments">
+            <h3>User Comments:</h3>
+            <div class="review-comment">
+                <p>"This game is a masterpiece! The open world is incredible."</p>
+                <p> - User1</p>
+            </div>
+            <div class="review-comment">
+                <p>"The puzzles are challenging and the combat is so much fun!"</p>
+                <p> - User2</p>
+            </div>
+            <div class="review-comment">
+                <p>"The story is very engaging, I loved the characters."</p>
+                <p> - User3</p>
+            </div>
+        </div>
+
+        <div>
+            <label for="usercomment"><h4>Add a Comment</h4></label>
+            <input class="usercomment" type="text" id="usercomment" name="usercomment" style="width:300px; height: 30px; font-size: 20px;" placeholder="....">
+            <br>
+            <br>
+            <label for="star"></label>
+            <select class="star" id="star" name="star">
+                <option value="5">★★★★★</option>
+                <option value="4">★★★★</option>
+                <option value="3">★★★</option>
+                <option value="2">★★</option>
+                <option value="1">★</option>
+                <option value="0">☆</option>
+            </select>
+            <br>
+            <br> 
+            <input class="submit" type="submit"></input>
+        </div>
+        
+    </div>
+    
+    <footer id="socials-section">
+        <p>Connect with Us:</p>
+        <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a> | <a href="#">YouTube</a>
+        <p>&copy; 2025 Cir Pink's. All rights reserved.</p>
+    </footer>
+</body>
+</html>

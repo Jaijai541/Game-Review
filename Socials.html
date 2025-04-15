@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameSphere - Socials</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        nav {
+            background-color: #444;
+            color: #fff;
+            padding: 0.5em 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0 1em;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <script>
+        function navigatePage(page) {
+            let pageURLs = {
+                "Home": "index.html",
+                "Socials": "socials.html",
+                "About": "about.html"
+            };
+
+            if (pageURLs[page]) {
+                window.location.href = pageURLs[page];
+            } else {
+                alert("Page not available.");
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <header>
+        <h1>GameSphere</h1>
+        <p>Your Ultimate Game Review Hub</p>
+    </header>
+
+    <nav>
+        <a href="#" onclick="navigatePage('Home')">Home</a>
+        <a href="#" onclick="navigatePage('Socials')">Socials</a>
+        <a href="#" onclick="navigatePage('About')">About</a>
+    </nav>
+
+    <div class="container">
+        <h2>Connect with Us!</h2>
+        <p>Follow us on our social media platforms for the latest updates:</p>
+        <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">YouTube</a></li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 GameSphere. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

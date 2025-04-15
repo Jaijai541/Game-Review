@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Legends: Bang Bang - Review</title>
+    <link rel="stylesheet" type="text/css" href="stylesz.css"/>
+    <style>
+        
+    </style>
+    <script>
+        function navigatePage(page) {
+            let pageURLs = {
+                "Home": "Game Review.html",
+                "Socials": "#socials-section",
+                "About": "About.html"
+            };
+
+            if (pageURLs[page]) {
+                if (page === "#socials-section"){
+                    window.location.href = pageURLs[page];
+                } else {
+                    window.location.href = pageURLs[page];
+                }
+
+            } else {
+                alert("Page not available.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Cir Pink's</h1>
+        <p>Your Ultimate Game Review Hub</p>
+    </header>
+    <nav>
+        <ul>
+            <a href="#" onclick="navigatePage('Home')">Home</a>
+            <a href="#socials-section" onclick="navigatePage('Socials')">Socials</a>
+            <a href="#" onclick="navigatePage('About')">About</a>
+        </ul>
+    </nav>
+    <div class="review-content">
+        <h1>Mobile Legends: Bang Bang</h1>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/1WolDM3mnSY?si=YhZys0vmYryBZjVb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        
+        </div>
+        <h2>Description</h2>
+        <p>Mobile Legends: Bang Bang is a fast-paced 5v5 multiplayer online battle arena (MOBA) game for mobile devices. Players choose from a large roster of heroes with unique abilities and battle to destroy the enemy's base.</p>
+        
+        <h2>Story</h2>
+        <p>Heroes battling across the land of dawn, and the battles between good and evil. Each hero has their own backstory, and relationships with other heroes.</p>
+        
+        <h2>Review</h2>
+        <p><strong>Rating:</strong> <span class="rating">★★★★☆</span></p>
+        
+        <h2>Platform</h2>
+        <ul>
+            <li>Android</li>
+            <li>iOS</li>
+        </ul>
+
+        <h2>Device Requirement</h2>
+        <p>On Android</p>
+        <ul>
+            <li>Android 5 or higher</li>
+            <li>Quad Core Processor, 2.0 GHx or higher</li>
+            <li>2 GB RAM</li>
+            <li>6GB or more ROM</li>
+        </ul>
+
+        <p>On iOS</p>
+        <ul>
+            <li>iOS 11 or higher</li>
+            <li>Quad Core Processor, 2.0 GHx or higher</li>
+            <li>2 GB RAM</li>
+            <li>6GB or more ROM</li>
+        </ul>
+        
+        <a href="https://www.mobilelegends.com/" class="play-button">Play the Game</a>
+        <br></br>
+        <div class="review-comments">
+            <h3>User Comments:</h3>
+            <div class="review-comment">
+                <p>"The animation and gameplay is a masterpiece! The battlefield is incredible."</p>
+                <p> - User1</p>
+            </div>
+            <div class="review-comment">
+                <p>"The PVP are challenging, battling with other players is fun!"</p>
+                <p> - User2</p>
+            </div>
+            <div class="review-comment">
+                <p>"The story is very engaging, I loved every heroes and their stories."</p>
+                <p> - User3</p>
+            </div>
+        </div>
+
+        <div>
+            <label for="usercomment"><h4>Add a Comment</h4></label>
+            <input type="text" id="usercomment" name="usercomment" style="width:300px; height: 30px; font-size: 20px;" placeholder="....">
+            <br>
+            <br>
+            <label for="star"></label>
+            <select id="star" name="star">
+                <option value="5">★★★★★</option>
+                <option value="4">★★★★</option>
+                <option value="3">★★★</option>
+                <option value="2">★★</option>
+                <option value="1">★</option>
+                <option value="0">☆</option>
+            </select>
+            <br>
+            <br> <input class="submit" type="submit">
+        </div>
+        
+    </div>
+    <footer id="socials-section">
+        <p>Connect with Us:</p>
+        <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a> | <a href="#">YouTube</a>
+        <p>&copy; 2025 Cir Pink's. All rights reserved.</p>
+    </footer>
+</body>
+</html>

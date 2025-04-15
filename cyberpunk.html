@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyberpunk 2077 - Review</title>
+    <link rel="stylesheet" type="text/css" href="stylesz.css"/>
+    <style>
+        
+    </style>
+    <script>
+        function navigatePage(page) {
+            let pageURLs = {
+                "Home": "Game Review.html",
+                "Socials": "#socials-section",
+                "About": "About.html"
+            };
+
+            if (pageURLs[page]) {
+                if (page === "#socials-section"){
+                    window.location.href = pageURLs[page];
+                } else {
+                    window.location.href = pageURLs[page];
+                }
+
+            } else {
+                alert("Page not available.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Cir Pink's</h1>
+        <p>Your Ultimate Game Review Hub</p>
+    </header>
+    <nav>
+        <ul>
+            <a href="#" onclick="navigatePage('Home')">Home</a>
+            <a href="#socials-section" onclick="navigatePage('Socials')">Socials</a>
+            <a href="#" onclick="navigatePage('About')">About</a>
+        </ul>
+    </nav>
+    <div class="review-content">
+        <h1>Cyberpunk 2077</h1>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/DvVjkqB3LH0?si=d75ikTnv-9EcB3wE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        </div>
+        <h2>Description</h2>
+        <p>Cyberpunk 2077 is an open-world, action-adventure RPG set in Night City, a megalopolis obsessed with power, glamour, and body modification.1 You play as V, a mercenary outlaw going after a one-of-a-kind implant that is the key to immortality.</p>
+        
+        <h2>Story</h2>
+        <p>V's journey is a desperate struggle for survival in a corrupt and technologically advanced city. After a botched heist, V's mind is intertwined with the digital ghost of legendary rockerboy Johnny Silverhand. The game explores themes of identity, mortality, and the dangers of unchecked technological advancement, as V navigates the treacherous political landscape of Night City while fighting for their own existence.</p>
+        
+        <h2>Review</h2>
+        <p><strong>Rating:</strong> <span class="rating">★★★★☆</span></p>
+
+        <h2>Platform</h2>
+        <ul>
+            <li>PC</li>
+            <li>Xbox One</li>
+            <li>PS4</li>
+            <li>Xbox: Series X</li>
+            <li>PS5</li>
+        </ul>
+
+        <h2>Device Requirement</h2>
+        <p>On PC</p>
+        <ul>
+            <li>64-bit Windows 10</li>
+            <li>Intel Core i7-4790 or AMD Ryzen 3 3200G.</li>
+            <li>12 GB RAM</li>
+            <li>GTX 1060 6GB or GTX 1660 Super or Radeon RX 590.</li>
+        </ul>
+        
+        <a href="https://www.cyberpunk.net/ph/en/" class="play-button">Play the Game</a>
+        <br></br>
+        <div class="review-comments">
+            <h3>User Comments:</h3>
+            <div class="review-comment">
+                <p>"This game is a masterpiece! The open world is incredible."</p>
+                <p> - User1</p>
+            </div>
+            <div class="review-comment">
+                <p>"The sci-fi are fantastic and the gameplay is engaging!"</p>
+                <p> - User2</p>
+            </div>
+            <div class="review-comment">
+                <p>"The story is very cliffhanging, I loved the designs."</p>
+                <p> - User3</p>
+            </div>
+        </div>
+
+        <div>
+            <label for="usercomment"><h4>Add a Comment</h4></label>
+            <input type="text" id="usercomment" name="usercomment" style="width:300px; height: 30px; font-size: 20px;" placeholder="....">
+            <br>
+            <br>
+            <label for="star"></label>
+            <select id="star" name="star">
+                <option value="5">★★★★★</option>
+                <option value="4">★★★★</option>
+                <option value="3">★★★</option>
+                <option value="2">★★</option>
+                <option value="1">★</option>
+                <option value="0">☆</option>
+            </select>
+            <br>
+            <br> <input class="submit" type="submit">
+        </div>
+        
+    </div>
+    <footer id="socials-section">
+        <p>Connect with Us:</p>
+        <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a> | <a href="#">YouTube</a>
+        <p>&copy; 2025 Cir Pink's. All rights reserved.</p>
+    </footer>
+</body>
+</html>

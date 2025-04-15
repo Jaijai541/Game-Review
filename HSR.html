@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honkai: Star Rail - Review</title>
+    <link rel="stylesheet" type="text/css" href="stylesz.css"/>
+    <style>
+        
+    </style>
+    <script>
+        function navigatePage(page) {
+            let pageURLs = {
+                "Home": "Game Review.html",
+                "Socials": "#socials-section",
+                "About": "About.html"
+            };
+
+            if (pageURLs[page]) {
+                if (page === "#socials-section"){
+                    window.location.href = pageURLs[page];
+                } else {
+                    window.location.href = pageURLs[page];
+                }
+
+            } else {
+                alert("Page not available.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Cir Pink's</h1>
+        <p>Your Ultimate Game Review Hub</p>
+    </header>
+    <nav>
+        <ul>
+            <a href="#" onclick="navigatePage('Home')">Home</a>
+            <a href="#socials-section" onclick="navigatePage('Socials')">Socials</a>
+            <a href="#" onclick="navigatePage('About')">About</a>
+        </ul>
+    </nav>
+    <div class="review-content">
+        <h1>Honkai: Star Rail</h1>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/w8vPZrMFiZ4?si=P_m6LHvsvzOa33mh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        </div>
+        <h2>Description</h2>
+        <p>Honkai: Star Rail is a turn-based space fantasy RPG where players embark on an interstellar journey aboard the Astral Express. They explore diverse worlds, meet unique characters, and uncover the mysteries of the Stellaron.</p>
+        
+        <h2>Story</h2>
+        <p>Players take on the role of the Trailblazer, who awakens with a Stellaron inside their body. They join the Astral Express crew to travel across the cosmos, seeking answers about the Stellaron and the threats it poses. The game explores themes of destiny, choice, and the vastness of the universe.</p>
+        
+        <h2>Review</h2>
+        <p><strong>Rating:</strong> <span class="rating">★★★★☆</span></p>
+        
+        <h2>Platform</h2>
+        <ul>
+            <li>Android</li>
+            <li>iOS</li>
+            <li>PC</li>
+            <li>PS5</li>
+        </ul>
+
+        <h2>Device Requirement</h2>
+        <p>On Android</p>
+        <ul>
+            <li>Android 9 or higher</li>
+            <li>Quad Core Processor, 2.0 GHx or higher</li>
+            <li>Snapdragon 855, Dimensity 1000, Kirin 990, or higher processors.</li>
+            <li>4 GB RAM</li>
+            <li>64 or more ROM</li>
+        </ul>
+
+        <p>On iOS</p>
+        <ul>
+            <li>iOS 11 or higher</li>
+            <li>iPhone XS, iPhone XR, or later models. iPad with Apple A12 processor or later</li>
+            <li>2 GB RAM</li>
+            <li>64 or more ROM</li>
+        </ul>
+
+        <p>On PC</p>
+        <ul>
+            <li>Windows 7 with 64-bit processor or higher</li>
+            <li> PC with Intel® Core™ i3 Processor, discrete graphics card (Nvidia GeForce GTX 650 or higher)</li>
+            <li>6 GB of RAM</li>
+            <li>128 or more ROM</li>
+        </ul>
+        
+        <a href="https://hsr.hoyoverse.com/en-us/" class="play-button">Play the Game</a>
+        <br></br>
+        <div class="review-comments">
+            <h3>User Comments:</h3>
+            <div class="review-comment">
+                <p>"The animation is a masterpiece! This is incredible."</p>
+                <p> - User1</p>
+            </div>
+            <div class="review-comment">
+                <p>"The fights are very challenging, collecting new characters!"</p>
+                <p> - User2</p>
+            </div>
+            <div class="review-comment">
+                <p>"I loved ROBIN and her music, makes me cry huhuhu."</p>
+                <p> - User3</p>
+            </div>
+        </div>
+
+        <div>
+            <label for="usercomment"><h4>Add a Comment</h4></label>
+            <input type="text" id="usercomment" name="usercomment" style="width:300px; height: 30px; font-size: 20px;" placeholder="....">
+            <br>
+            <br>
+            <label for="star"></label>
+            <select id="star" name="star">
+                <option value="5">★★★★★</option>
+                <option value="4">★★★★</option>
+                <option value="3">★★★</option>
+                <option value="2">★★</option>
+                <option value="1">★</option>
+                <option value="0">☆</option>
+            </select>
+            <br>
+            <br> <input class="submit" type="submit">
+        </div>
+        
+    </div>
+    <footer id="socials-section">
+        <p>Connect with Us:</p>
+        <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a> | <a href="#">YouTube</a>
+        <p>&copy; 2025 Cir Pink's. All rights reserved.</p>
+    </footer>
+</body>
+</html>

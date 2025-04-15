@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cir Pink's - About</title>
+    <link rel="stylesheet" type="text/css" href="stylesabout.css"/>
+    <script>
+        function navigatePage(page) {
+            let pageURLs = {
+                "Home": "Game Review.html",
+                "Socials": "#socials-section",
+                "About": "about.html"
+            };
+
+            if (pageURLs[page]) {
+                window.location.href = pageURLs[page];
+            } else {
+                alert("Page not available.");
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <header>
+        <h1>Cir Pink's</h1>
+        <p>Your Ultimate Game Review Hub</p>
+    </header>
+
+    <nav>
+        <ul>
+            <a href="#" onclick="navigatePage('Home')">Home</a>
+            <a href="#socials-section" onclick="navigatePage('Socials')">Socials</a>
+            <a href="#" onclick="navigatePage('About')">About</a>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>About Cir Pink's</h2>
+        <p>Cir Pink's is dedicated to providing comprehensive and unbiased game reviews. Our team of experienced gamers strives to deliver accurate and insightful information to help you make informed decisions.</p>
+        <p>We cover a wide range of games, from AAA titles to indie gems, and provide news, features, and community content.</p>
+    </div>
+
+    <footer id="socials-section">
+        <p>Connect with Us:</p>
+        <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a> | <a href="#">YouTube</a>
+        <p>&copy; 2025 Cir Pink's. All rights reserved.</p>
+    </footer>
