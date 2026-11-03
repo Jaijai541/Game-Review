@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cir Pink's - About</title>
-    <link rel="stylesheet" type="text/css" href="stylesabout.css"/>
+    <meta name="description" content="About Cir Pink's Game Review Hub - Learn about our review methodology, mission, and passionate team of gamers.">
+    <title>Cir Pink's - About the Hub</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" type="text/css" href="stylesabout.css">
     <script>
         function navigatePage(page) {
             let pageURLs = {
-                "Home": "Game Review.html",
-                "Socials": "#socials-section",
-                "About": "about.html"
+                "Home": "index.html",
+                "Socials": "Socials.html",
+                "About": "About.html"
             };
 
             if (pageURLs[page]) {
@@ -24,26 +26,95 @@
 <body>
 
     <header>
-        <h1>Cir Pink's</h1>
+        <div class="brand-wrapper">
+            <img src="assets/images/logo.svg" alt="Game Review Hub Logo" class="brand-icon">
+            <h1>Cir Pink's</h1>
+        </div>
         <p>Your Ultimate Game Review Hub</p>
     </header>
 
-    <nav>
+    <nav aria-label="Main navigation">
         <ul>
-            <a href="#" onclick="navigatePage('Home')">Home</a>
-            <a href="#socials-section" onclick="navigatePage('Socials')">Socials</a>
-            <a href="#" onclick="navigatePage('About')">About</a>
+            <li><a href="index.html" onclick="navigatePage('Home'); return false;">Home</a></li>
+            <li><a href="Socials.html" onclick="navigatePage('Socials'); return false;">Socials</a></li>
+            <li><a href="About.html" class="active" onclick="navigatePage('About'); return false;">About</a></li>
         </ul>
     </nav>
 
-    <div class="container">
-        <h2>About Cir Pink's</h2>
-        <p>Cir Pink's is dedicated to providing comprehensive and unbiased game reviews. Our team of experienced gamers strives to deliver accurate and insightful information to help you make informed decisions.</p>
-        <p>We cover a wide range of games, from AAA titles to indie gems, and provide news, features, and community content.</p>
-    </div>
+    <main class="container">
+        
+        <article class="about-card">
+            <h2>🎮 Our Mission</h2>
+            <p>Welcome to <strong>Cir Pink's Game Review Hub</strong> — a passion project built by gamers, for gamers. In an era where game marketing often overshadows actual gameplay, our mission is simple: provide honest, aesthetic, and community-driven reviews that help you discover which games are truly worth your time and hard-earned money.</p>
+            <p>From expansive AAA open worlds to competitive mobile MOBAs and mesmerizing indie RPGs, we evaluate games based on storytelling, mechanics, visual design, sound design, and player value.</p>
+
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number">8+</span>
+                    <span class="stat-label">In-Depth Reviews</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Independent & Free</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">5★</span>
+                    <span class="stat-label">Rating Standard</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">Gamer Community</span>
+                </div>
+            </div>
+        </article>
+
+        <article class="about-card">
+            <h2>⭐ How We Review (The Rubric)</h2>
+            <p>Every review on Cir Pink's follows a consistent, transparent scoring methodology so you can calibrate your expectations at a glance:</p>
+            
+            <div class="rubric-list">
+                <div class="rubric-item">
+                    <span class="rubric-stars">★★★★★</span>
+                    <span class="rubric-desc"><strong>Masterpiece:</strong> An unforgettable milestone in gaming with world-class narrative, mechanics, and design.</span>
+                </div>
+                <div class="rubric-item">
+                    <span class="rubric-stars">★★★★☆</span>
+                    <span class="rubric-desc"><strong>Great:</strong> Exceptionally enjoyable and polished, recommended wholeheartedly with minimal minor flaws.</span>
+                </div>
+                <div class="rubric-item">
+                    <span class="rubric-stars">★★★☆☆</span>
+                    <span class="rubric-desc"><strong>Decent:</strong> Solid foundation and entertaining gameplay, but may feel repetitive or niche.</span>
+                </div>
+                <div class="rubric-item">
+                    <span class="rubric-stars">★★☆☆☆</span>
+                    <span class="rubric-desc"><strong>Mediocre:</strong> Suffer from balance issues, optimization bugs, or lackluster mechanics.</span>
+                </div>
+                <div class="rubric-item">
+                    <span class="rubric-stars">★☆☆☆☆</span>
+                    <span class="rubric-desc"><strong>Not Recommended:</strong> Severe bugs, predatory monetization, or uninspired design.</span>
+                </div>
+            </div>
+        </article>
+
+        <article class="about-card">
+            <h2>📬 Reach Out & Collaborate</h2>
+            <p>Have a game you want us to review? Want to write a guest critique or report a correction? We'd love to hear from you!</p>
+            <p>Reach out through any of our community channels on our <a href="Socials.html" style="color: var(--accent-pink); font-weight: 600;">Socials page</a> or connect directly with author <strong>Jaijai541</strong> on GitHub.</p>
+        </article>
+
+    </main>
 
     <footer id="socials-section">
         <p>Connect with Us:</p>
-        <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a> | <a href="#">YouTube</a>
-        <p>&copy; 2025 Cir Pink's. All rights reserved.</p>
+        <div style="margin-bottom: 1rem;">
+            <a href="Socials.html">Discord Community</a> | 
+            <a href="Socials.html">YouTube</a> | 
+            <a href="Socials.html">Twitter / X</a> | 
+            <a href="Socials.html">Instagram</a>
+        </div>
+        <p style="color: var(--text-muted); font-size: 0.82rem;">&copy; 2025 Cir Pink's Game Review Hub. All rights reserved.</p>
     </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

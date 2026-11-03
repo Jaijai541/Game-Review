@@ -3,26 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cyberpunk 2077 - Review</title>
-    <link rel="stylesheet" type="text/css" href="stylesz.css"/>
-    <style>
-        
-    </style>
+    <meta name="description" content="In-depth review of Cyberpunk 2077 Phantom Liberty on PC, PS5, and Xbox Series X. Night City lore, combat overhaul, and system specs.">
+    <title>Cyberpunk 2077 - Review | Cir Pink's</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" type="text/css" href="stylesz.css">
     <script>
         function navigatePage(page) {
             let pageURLs = {
-                "Home": "Game Review.html",
-                "Socials": "#socials-section",
+                "Home": "index.html",
+                "Socials": "Socials.html",
                 "About": "About.html"
             };
 
             if (pageURLs[page]) {
-                if (page === "#socials-section"){
-                    window.location.href = pageURLs[page];
-                } else {
-                    window.location.href = pageURLs[page];
-                }
-
+                window.location.href = pageURLs[page];
+            } else if (page === "#socials-section") {
+                const el = document.getElementById("socials-section");
+                if (el) el.scrollIntoView({ behavior: "smooth" });
             } else {
                 alert("Page not available.");
             }
@@ -31,88 +28,173 @@
 </head>
 <body>
     <header>
-        <h1>Cir Pink's</h1>
+        <div class="brand-wrapper">
+            <img src="assets/images/logo.svg" alt="Game Review Hub Logo" class="brand-icon">
+            <h1>Cir Pink's</h1>
+        </div>
         <p>Your Ultimate Game Review Hub</p>
     </header>
-    <nav>
+
+    <nav aria-label="Main navigation">
         <ul>
-            <a href="#" onclick="navigatePage('Home')">Home</a>
-            <a href="#socials-section" onclick="navigatePage('Socials')">Socials</a>
-            <a href="#" onclick="navigatePage('About')">About</a>
+            <li><a href="index.html" onclick="navigatePage('Home'); return false;">Home</a></li>
+            <li><a href="Socials.html" onclick="navigatePage('Socials'); return false;">Socials</a></li>
+            <li><a href="About.html" onclick="navigatePage('About'); return false;">About</a></li>
         </ul>
     </nav>
-    <div class="review-content">
-        <h1>Cyberpunk 2077</h1>
-        <div class="video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/DvVjkqB3LH0?si=d75ikTnv-9EcB3wE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        </div>
-        <h2>Description</h2>
-        <p>Cyberpunk 2077 is an open-world, action-adventure RPG set in Night City, a megalopolis obsessed with power, glamour, and body modification.1 You play as V, a mercenary outlaw going after a one-of-a-kind implant that is the key to immortality.</p>
-        
-        <h2>Story</h2>
-        <p>V's journey is a desperate struggle for survival in a corrupt and technologically advanced city. After a botched heist, V's mind is intertwined with the digital ghost of legendary rockerboy Johnny Silverhand. The game explores themes of identity, mortality, and the dangers of unchecked technological advancement, as V navigates the treacherous political landscape of Night City while fighting for their own existence.</p>
-        
-        <h2>Review</h2>
-        <p><strong>Rating:</strong> <span class="rating">★★★★☆</span></p>
 
-        <h2>Platform</h2>
-        <ul>
-            <li>PC</li>
-            <li>Xbox One</li>
-            <li>PS4</li>
-            <li>Xbox: Series X</li>
-            <li>PS5</li>
-        </ul>
-
-        <h2>Device Requirement</h2>
-        <p>On PC</p>
-        <ul>
-            <li>64-bit Windows 10</li>
-            <li>Intel Core i7-4790 or AMD Ryzen 3 3200G.</li>
-            <li>12 GB RAM</li>
-            <li>GTX 1060 6GB or GTX 1660 Super or Radeon RX 590.</li>
-        </ul>
-        
-        <a href="https://www.cyberpunk.net/ph/en/" class="play-button">Play the Game</a>
-        <br></br>
-        <div class="review-comments">
-            <h3>User Comments:</h3>
-            <div class="review-comment">
-                <p>"This game is a masterpiece! The open world is incredible."</p>
-                <p> - User1</p>
-            </div>
-            <div class="review-comment">
-                <p>"The sci-fi are fantastic and the gameplay is engaging!"</p>
-                <p> - User2</p>
-            </div>
-            <div class="review-comment">
-                <p>"The story is very cliffhanging, I loved the designs."</p>
-                <p> - User3</p>
-            </div>
-        </div>
-
-        <div>
-            <label for="usercomment"><h4>Add a Comment</h4></label>
-            <input type="text" id="usercomment" name="usercomment" style="width:300px; height: 30px; font-size: 20px;" placeholder="....">
-            <br>
-            <br>
-            <label for="star"></label>
-            <select id="star" name="star">
-                <option value="5">★★★★★</option>
-                <option value="4">★★★★</option>
-                <option value="3">★★★</option>
-                <option value="2">★★</option>
-                <option value="1">★</option>
-                <option value="0">☆</option>
-            </select>
-            <br>
-            <br> <input class="submit" type="submit">
-        </div>
-        
+    <div class="breadcrumbs">
+        <a href="index.html">Home</a> <span>/</span> <span>Reviews</span> <span>/</span> <strong>Cyberpunk 2077</strong>
     </div>
+
+    <main class="review-content">
+        <div class="review-header">
+            <h1>Cyberpunk 2077</h1>
+            <div class="review-meta">
+                <span class="badge">Action RPG</span>
+                <span class="badge">Sci-Fi / Cyberpunk</span>
+                <span class="badge">CD PROJEKT RED</span>
+                <span class="badge">Update 2.0 / Phantom Liberty</span>
+            </div>
+        </div>
+
+        <div class="video">
+            <iframe src="https://www.youtube-nocookie.com/embed/DvVjkqB3LH0" title="Cyberpunk 2077 Trailer" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <section class="section-block">
+            <h2>📖 Description</h2>
+            <p>Cyberpunk 2077 is an open-world, action-adventure RPG set in Night City, a neon-soaked megalopolis obsessed with power, glamour, and relentless body modification. Players embody V, a customizable mercenary outlaw in pursuit of a prototype neural chip containing the digitized psyche of rock rebel Johnny Silverhand.</p>
+        </section>
+
+        <section class="section-block">
+            <h2>🗡️ Story</h2>
+            <p>After a high-stakes heist at Arasaka Corporation turns catastrophic, V is left fighting against time as the biochip slowly overwrites their consciousness. Navigating between corrupt megacorps, ruthless street gangs, and enigmatic fixers, V must make decisions that determine not only their survival, but the very soul of Night City.</p>
+        </section>
+
+        <section class="section-block">
+            <h2>⭐ Verdict & Review</h2>
+            <div class="rating-score-box">
+                <strong>Our Score:</strong>
+                <span class="rating">★★★★☆</span>
+                <span style="color: var(--accent-gold); font-weight: 700;">4.0 / 5.0 (Great Experience)</span>
+            </div>
+            <p>With the monumental 2.0 update and the Phantom Liberty spy-thriller expansion, Cyberpunk 2077 fulfilled its immense promise. Featuring redesigned cyberware, vehicle combat, smart AI, and some of the best ray-traced visuals in PC gaming history, it delivers an unforgettable cyberpunk thrill ride.</p>
+        </section>
+
+        <section class="section-block">
+            <h2>🎮 Supported Platforms</h2>
+            <ul class="platform-list">
+                <li>PC (Steam / GOG / Epic)</li>
+                <li>PlayStation 5</li>
+                <li>Xbox Series X / Series S</li>
+                <li>PS4 / Xbox One (Legacy 1.6 edition)</li>
+            </ul>
+        </section>
+
+        <section class="section-block">
+            <h2>⚙️ System Requirements (PC)</h2>
+            <div class="specs-grid">
+                <div class="spec-card">
+                    <h3>Minimum (1080p / 30 FPS Low)</h3>
+                    <ul>
+                        <li>OS: 64-bit Windows 10</li>
+                        <li>CPU: Intel Core i7-6700 or AMD Ryzen 5 1600</li>
+                        <li>RAM: 12 GB</li>
+                        <li>GPU: GTX 1060 6GB or Radeon RX 580</li>
+                        <li>Storage: 70 GB SSD</li>
+                    </ul>
+                </div>
+                <div class="spec-card">
+                    <h3>Recommended (1080p / 60 FPS Ultra)</h3>
+                    <ul>
+                        <li>OS: 64-bit Windows 10 / 11</li>
+                        <li>CPU: Intel Core i7-12700 or AMD Ryzen 7 7800X3D</li>
+                        <li>RAM: 16 GB - 32 GB</li>
+                        <li>GPU: RTX 3070 / RTX 4070 or Radeon RX 6800 XT</li>
+                        <li>Storage: 70 GB NVMe SSD</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="cta-wrapper">
+            <a href="https://www.cyberpunk.net" target="_blank" rel="noopener noreferrer" class="play-button">
+                🎮 Play Cyberpunk 2077
+            </a>
+        </div>
+
+        <!-- User Comments Section -->
+        <section class="section-block">
+            <div class="review-comments">
+                <h3>💬 Community Reviews & Comments</h3>
+                
+                <div class="review-comment">
+                    <div class="comment-header">
+                        <span class="comment-user">NetrunnerV</span>
+                        <span class="rating" style="font-size: 0.95rem;">★★★★★</span>
+                        <span class="comment-date">Verified Player</span>
+                    </div>
+                    <p>"The 2.0 skill tree rework makes cyberware builds incredibly fun. Night City at night with ray tracing enabled is unmatched."</p>
+                </div>
+
+                <div class="review-comment">
+                    <div class="comment-header">
+                        <span class="comment-user">Silverhand_Echo</span>
+                        <span class="rating" style="font-size: 0.95rem;">★★★★☆</span>
+                        <span class="comment-date">Verified Player</span>
+                    </div>
+                    <p>"Keanu Reeves delivers an iconic performance as Johnny Silverhand. Dogtown in Phantom Liberty is packed with amazing side quests."</p>
+                </div>
+
+                <div class="review-comment">
+                    <div class="comment-header">
+                        <span class="comment-user">CorpoRat_Escape</span>
+                        <span class="rating" style="font-size: 0.95rem;">★★★★☆</span>
+                        <span class="comment-date">Verified Player</span>
+                    </div>
+                    <p>"Great soundtrack, incredible gunplay, and deep environmental storytelling. One of my favorite action RPGs of the generation."</p>
+                </div>
+            </div>
+
+            <div class="add-comment-card">
+                <h4>✍️ Add Your Review</h4>
+                <div class="form-group">
+                    <label for="username">Your Name / Gamer Tag:</label>
+                    <input type="text" id="username" placeholder="e.g. NeonMerc" autocomplete="name">
+                </div>
+                <div class="form-group">
+                    <label for="usercomment">Your Thoughts / Critique:</label>
+                    <input class="usercomment" type="text" id="usercomment" name="usercomment" placeholder="Share your experience in Night City...">
+                </div>
+                <div class="form-group">
+                    <label for="star">Your Rating:</label>
+                    <select class="star" id="star" name="star">
+                        <option value="5">★★★★★ (5/5 Masterpiece)</option>
+                        <option value="4" selected>★★★★☆ (4/5 Great)</option>
+                        <option value="3">★★★☆☆ (3/5 Good)</option>
+                        <option value="2">★★☆☆☆ (2/5 Mediocre)</option>
+                        <option value="1">★☆☆☆☆ (1/5 Poor)</option>
+                    </select>
+                </div>
+                <button type="button" class="submit submit-btn">Submit Review ✨</button>
+            </div>
+        </section>
+
+    </main>
+    
     <footer id="socials-section">
         <p>Connect with Us:</p>
-        <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a> | <a href="#">YouTube</a>
-        <p>&copy; 2025 Cir Pink's. All rights reserved.</p>
+        <div style="margin-bottom: 1rem;">
+            <a href="Socials.html">Discord Community</a> | 
+            <a href="Socials.html">YouTube</a> | 
+            <a href="Socials.html">Twitter / X</a> | 
+            <a href="Socials.html">Instagram</a>
+        </div>
+        <p style="color: var(--text-muted); font-size: 0.82rem;">&copy; 2025 Cir Pink's Game Review Hub. All rights reserved.</p>
     </footer>
+
+    <button onclick="navigatePage('Home')" class="homes" title="Scroll to top" aria-label="Scroll to top">↑</button>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

@@ -3,26 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Legend of Zelda: Tears of the Kingdom - Review</title>
-    <link rel="stylesheet" type="text/css" href="stylesz.css"/>
-    <style>
-        
-    </style>
+    <meta name="description" content="Read our in-depth review of The Legend of Zelda: Tears of the Kingdom on Nintendo Switch. Story, combat, puzzles, and system requirements.">
+    <title>The Legend of Zelda: Tears of the Kingdom - Review | Cir Pink's</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" type="text/css" href="stylesz.css">
     <script>
         function navigatePage(page) {
             let pageURLs = {
-                "Home": "Game Review.html",
-                "Socials": "#socials-section",
+                "Home": "index.html",
+                "Socials": "Socials.html",
                 "About": "About.html"
             };
 
             if (pageURLs[page]) {
-                if (page === "#socials-section"){
-                    window.location.href = pageURLs[page];
-                } else {
-                    window.location.href = pageURLs[page];
-                }
-
+                window.location.href = pageURLs[page];
+            } else if (page === "#socials-section") {
+                const el = document.getElementById("socials-section");
+                if (el) el.scrollIntoView({ behavior: "smooth" });
             } else {
                 alert("Page not available.");
             }
@@ -31,89 +28,169 @@
 </head>
 <body>
     <header>
-        <h1>Cir Pink's</h1>
+        <div class="brand-wrapper">
+            <img src="assets/images/logo.svg" alt="Game Review Hub Logo" class="brand-icon">
+            <h1>Cir Pink's</h1>
+        </div>
         <p>Your Ultimate Game Review Hub</p>
     </header>
-    <nav>
+
+    <nav aria-label="Main navigation">
         <ul>
-            <a href="#" onclick="navigatePage('Home')">Home</a>
-            <a href="#socials-section" onclick="navigatePage('Socials')">Socials</a>
-            <a href="#" onclick="navigatePage('About')">About</a>
+            <li><a href="index.html" onclick="navigatePage('Home'); return false;">Home</a></li>
+            <li><a href="Socials.html" onclick="navigatePage('Socials'); return false;">Socials</a></li>
+            <li><a href="About.html" onclick="navigatePage('About'); return false;">About</a></li>
         </ul>
     </nav>
-    <div class="review-content">
-        <h1>The Legend of Zelda: Tears of the Kingdom</h1>
-        <div class="video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/uHGShqcAHlQ?si=_iiRizJB0U-RuWpO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-        <h2>Description</h2>
-        <p>An epic adventure across the land of Hyrule, filled with exploration, puzzles, and thrilling combat.</p>
 
-        <h2>Story</h2>
-        <p>The story follows Link's journey to save Hyrule from a mysterious threat...</p>
-
-        <h2>Review</h2>
-        <p><strong>Rating:</strong> <span class="rating">★★★★★</span></p>
-
-        <h2>Platform</h2>
-        <ul>
-            <li>PC</li>
-            <li>Nintendo Switch</li>
-        </ul>
-
-        <h2>Device Requirement</h2>
-        <p>On PC</p>
-        <ul>
-            <li>64-bit processor</li>
-            <li>Intel Core i5 or AMD Ryzen 3</li>
-            <li>12 GB RAM</li>
-        </ul>
-
-        
-
-        <a href="https://zelda.nintendo.com/tears-of-the-kingdom/" class="play-button">Play the Game</a>
-        <br></br>
-        <div class="review-comments">
-            <h3>User Comments:</h3>
-            <div class="review-comment">
-                <p>"This game is a masterpiece! The open world is incredible."</p>
-                <p> - User1</p>
-            </div>
-            <div class="review-comment">
-                <p>"The puzzles are challenging and the combat is so much fun!"</p>
-                <p> - User2</p>
-            </div>
-            <div class="review-comment">
-                <p>"The story is very engaging, I loved the characters."</p>
-                <p> - User3</p>
-            </div>
-        </div>
-
-        <div>
-            <label for="usercomment"><h4>Add a Comment</h4></label>
-            <input class="usercomment" type="text" id="usercomment" name="usercomment" style="width:300px; height: 30px; font-size: 20px;" placeholder="....">
-            <br>
-            <br>
-            <label for="star"></label>
-            <select class="star" id="star" name="star">
-                <option value="5">★★★★★</option>
-                <option value="4">★★★★</option>
-                <option value="3">★★★</option>
-                <option value="2">★★</option>
-                <option value="1">★</option>
-                <option value="0">☆</option>
-            </select>
-            <br>
-            <br> 
-            <input class="submit" type="submit"></input>
-        </div>
-        
+    <div class="breadcrumbs">
+        <a href="index.html">Home</a> <span>/</span> <span>Reviews</span> <span>/</span> <strong>The Legend of Zelda: Tears of the Kingdom</strong>
     </div>
+
+    <main class="review-content">
+        <div class="review-header">
+            <h1>The Legend of Zelda: Tears of the Kingdom</h1>
+            <div class="review-meta">
+                <span class="badge">Action-Adventure</span>
+                <span class="badge">Open World</span>
+                <span class="badge">Nintendo EPD</span>
+                <span class="badge">Release: 2023</span>
+            </div>
+        </div>
+
+        <div class="video">
+            <iframe src="https://www.youtube-nocookie.com/embed/uHGShqcAHlQ" title="The Legend of Zelda: Tears of the Kingdom Trailer" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <section class="section-block">
+            <h2>📖 Description</h2>
+            <p>An epic adventure across the vast land, soaring sky islands, and eerie Depths of Hyrule. Building upon the beloved foundation of Breath of the Wild, Tears of the Kingdom introduces mind-bending Ultrahand crafting, Fuse weapon synthesis, and Ascend vertical mobility that redefine emergent sandbox gameplay.</p>
+        </section>
+
+        <section class="section-block">
+            <h2>🗡️ Story</h2>
+            <p>Following the re-awakening of an ancient malevolence beneath Hyrule Castle, Princess Zelda vanishes through time while Link awakens with a mysterious Zonai right arm. To rescue Zelda and restore the kingdom from the clutches of the Demon King Ganondorf, Link must uncover the truth behind the Imprisoning War and the legendary Tears of the Dragon.</p>
+        </section>
+
+        <section class="section-block">
+            <h2>⭐ Verdict & Review</h2>
+            <div class="rating-score-box">
+                <strong>Our Score:</strong>
+                <span class="rating">★★★★★</span>
+                <span style="color: var(--accent-gold); font-weight: 700;">5.0 / 5.0 (Essential Masterpiece)</span>
+            </div>
+            <p>Tears of the Kingdom is a staggering achievement in player agency and physics engine design. The seamless layering of Sky, Surface, and Depths creates hundreds of hours of organic discovery. Even with minor hardware limitations on the Switch, it stands as one of the greatest video games ever crafted.</p>
+        </section>
+
+        <section class="section-block">
+            <h2>🎮 Supported Platforms</h2>
+            <ul class="platform-list">
+                <li>Nintendo Switch (Native)</li>
+                <li>PC (via Emulation)</li>
+            </ul>
+        </section>
+
+        <section class="section-block">
+            <h2>⚙️ System Requirements</h2>
+            <div class="specs-grid">
+                <div class="spec-card">
+                    <h3>Nintendo Switch</h3>
+                    <ul>
+                        <li>Platform: Handheld / Tabletop / TV Mode</li>
+                        <li>Target Framerate: 30 FPS at 900p (docked) / 720p (portable)</li>
+                        <li>Storage Required: 16.3 GB</li>
+                    </ul>
+                </div>
+                <div class="spec-card">
+                    <h3>PC (Emulation Target)</h3>
+                    <ul>
+                        <li>OS: Windows 10/11 64-bit</li>
+                        <li>Processor: Intel Core i5-10400 or AMD Ryzen 5 3600</li>
+                        <li>RAM: 16 GB DDR4</li>
+                        <li>GPU: NVIDIA GeForce GTX 1660 Super / RTX 2060 or AMD RX 5600 XT</li>
+                        <li>Storage: 20 GB free SSD storage</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="cta-wrapper">
+            <a href="https://zelda.nintendo.com/tears-of-the-kingdom/" target="_blank" rel="noopener noreferrer" class="play-button">
+                🎮 Play the Game on Nintendo.com
+            </a>
+        </div>
+
+        <!-- User Comments Section -->
+        <section class="section-block">
+            <div class="review-comments">
+                <h3>💬 Community Reviews & Comments</h3>
+                
+                <div class="review-comment">
+                    <div class="comment-header">
+                        <span class="comment-user">HylianChampion</span>
+                        <span class="rating" style="font-size: 0.95rem;">★★★★★</span>
+                        <span class="comment-date">Verified Player</span>
+                    </div>
+                    <p>"This game is a pure masterpiece! The Ultrahand vehicle building and the sheer depth of the underground map blew my mind."</p>
+                </div>
+
+                <div class="review-comment">
+                    <div class="comment-header">
+                        <span class="comment-user">PuzzleSolver_99</span>
+                        <span class="rating" style="font-size: 0.95rem;">★★★★★</span>
+                        <span class="comment-date">Verified Player</span>
+                    </div>
+                    <p>"The Shrines are far more creative than in BOTW. Being able to solve puzzles in twenty different unintended ways is peak game design."</p>
+                </div>
+
+                <div class="review-comment">
+                    <div class="comment-header">
+                        <span class="comment-user">GanonBuster</span>
+                        <span class="rating" style="font-size: 0.95rem;">★★★★★</span>
+                        <span class="comment-date">Verified Player</span>
+                    </div>
+                    <p>"The finale boss fight was cinematic and emotional. 10/10 game, highly recommend it to everyone."</p>
+                </div>
+            </div>
+
+            <div class="add-comment-card">
+                <h4>✍️ Add Your Review</h4>
+                <div class="form-group">
+                    <label for="username">Your Name / Gamer Tag:</label>
+                    <input type="text" id="username" placeholder="e.g. MasterGamer77" autocomplete="name">
+                </div>
+                <div class="form-group">
+                    <label for="usercomment">Your Thoughts / Critique:</label>
+                    <input class="usercomment" type="text" id="usercomment" name="usercomment" placeholder="What did you think of the gameplay, story, or mechanics?">
+                </div>
+                <div class="form-group">
+                    <label for="star">Your Rating:</label>
+                    <select class="star" id="star" name="star">
+                        <option value="5">★★★★★ (5/5 Masterpiece)</option>
+                        <option value="4">★★★★☆ (4/5 Great)</option>
+                        <option value="3">★★★☆☆ (3/5 Good)</option>
+                        <option value="2">★★☆☆☆ (2/5 Mediocre)</option>
+                        <option value="1">★☆☆☆☆ (1/5 Poor)</option>
+                    </select>
+                </div>
+                <button type="button" class="submit submit-btn">Submit Review ✨</button>
+            </div>
+        </section>
+
+    </main>
     
     <footer id="socials-section">
         <p>Connect with Us:</p>
-        <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a> | <a href="#">YouTube</a>
-        <p>&copy; 2025 Cir Pink's. All rights reserved.</p>
+        <div style="margin-bottom: 1rem;">
+            <a href="Socials.html">Discord Community</a> | 
+            <a href="Socials.html">YouTube</a> | 
+            <a href="Socials.html">Twitter / X</a> | 
+            <a href="Socials.html">Instagram</a>
+        </div>
+        <p style="color: var(--text-muted); font-size: 0.82rem;">&copy; 2025 Cir Pink's Game Review Hub. All rights reserved.</p>
     </footer>
+
+    <button onclick="navigatePage('Home')" class="homes" title="Scroll to top" aria-label="Scroll to top">↑</button>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

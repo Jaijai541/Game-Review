@@ -3,26 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reverse: 1999 - Review</title>
-    <link rel="stylesheet" type="text/css" href="stylesz.css"/>
-    <style>
-        
-    </style>
+    <meta name="description" content="In-depth review of Reverse: 1999 on PC, Android, and iOS. Time-traveling tactical card RPG, art deco British aesthetic, story, and specs.">
+    <title>Reverse: 1999 - Review | Cir Pink's</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" type="text/css" href="stylesz.css">
     <script>
         function navigatePage(page) {
             let pageURLs = {
-                "Home": "Game Review.html",
-                "Socials": "#socials-section",
+                "Home": "index.html",
+                "Socials": "Socials.html",
                 "About": "About.html"
             };
 
             if (pageURLs[page]) {
-                if (page === "#socials-section"){
-                    window.location.href = pageURLs[page];
-                } else {
-                    window.location.href = pageURLs[page];
-                }
-
+                window.location.href = pageURLs[page];
+            } else if (page === "#socials-section") {
+                const el = document.getElementById("socials-section");
+                if (el) el.scrollIntoView({ behavior: "smooth" });
             } else {
                 alert("Page not available.");
             }
@@ -31,104 +28,171 @@
 </head>
 <body>
     <header>
-        <h1>Cir Pink's</h1>
+        <div class="brand-wrapper">
+            <img src="assets/images/logo.svg" alt="Game Review Hub Logo" class="brand-icon">
+            <h1>Cir Pink's</h1>
+        </div>
         <p>Your Ultimate Game Review Hub</p>
     </header>
-    <nav>
+
+    <nav aria-label="Main navigation">
         <ul>
-            <a href="#" onclick="navigatePage('Home')">Home</a>
-            <a href="#socials-section" onclick="navigatePage('Socials')">Socials</a>
-            <a href="#" onclick="navigatePage('About')">About</a>
+            <li><a href="index.html" onclick="navigatePage('Home'); return false;">Home</a></li>
+            <li><a href="Socials.html" onclick="navigatePage('Socials'); return false;">Socials</a></li>
+            <li><a href="About.html" onclick="navigatePage('About'); return false;">About</a></li>
         </ul>
     </nav>
-    <div class="review-content">
-        <h1>Reverse: 1999</h1>
-        <div class="video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/NAZyj0b_JKY?si=WphYYuFW3BUkOYXj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-        <h2>Description</h2>
-        <p>Reverse: 1999 is a time-traveling strategic RPG featuring stylish 20th-century aesthetics. Players control Arcanists, individuals with magical abilities, as they navigate a mysterious temporal storm.</p>
-        
-        <h2>Story</h2>
-        <p>The story centers around a phenomenon called the "Storm," which reverses time at the end of each year. Players take on the role of Vertin, the Timekeeper, who is immune to the Storm's effects. Vertin must travel through different eras, recruit Arcanists, and uncover the secrets behind the Storm to prevent the complete erasure of history.</p>
-        
-        <h2>Review</h2>
-        <p><strong>Rating:</strong> <span class="rating">★★★★★</span></p>
-        
-        <h2>Platform</h2>
-        <ul>
-            <li>Android</li>
-            <li>iOS</li>
-            <li>PC</li>
-        </ul>
 
-        <h2>Device Requirement</h2>
-        <p>On Android</p>
-        <ul>
-            <li>Android 9 or higher</li>
-            <li>Quad Core Processor, 2.0 GHx or higher</li>
-            <li>Snapdragon 855, Dimensity 1000, Kirin 990, or higher processors.</li>
-            <li>4 GB RAM</li>
-            <li>64 or more ROM</li>
-        </ul>
-
-        <p>On iOS</p>
-        <ul>
-            <li>iOS 11 or higher</li>
-            <li>iPhone XS, iPhone XR, or later models. iPad with Apple A12 processor or later</li>
-            <li>2 GB RAM</li>
-            <li>64 or more ROM</li>
-        </ul>
-
-        <p>On PC</p>
-        <ul>
-            <li>Windows 10 64-bit processor or higher</li>
-            <li>Intel Core i5, VIDIA GTX 1050 or equivalent</li>
-            <li>8 GB of RAM</li>
-            <li>64 or more ROM</li>
-        </ul>
-        
-        <a href="https://re1999.bluepoch.com/" class="play-button">Play the Game</a>
-        <br></br>
-        <div class="review-comments">
-            <h3>User Comments:</h3>
-            <div class="review-comment">
-                <p>"Stylish art and a time-bending story that captivates."</p>
-                <p> - User1</p>
-            </div>
-            <div class="review-comment">
-                <p>"Deep strategy and rewarding tactical gameplay."</p>
-                <p> - User2</p>
-            </div>
-            <div class="review-comment">
-                <p>"Memorable characters and a rich, immersive world."</p>
-                <p> - User3</p>
-            </div>
-        </div>
-
-        <div>
-            <label for="usercomment"><h4>Add a Comment</h4></label>
-            <input type="text" id="usercomment" name="usercomment" style="width:300px; height: 30px; font-size: 20px;" placeholder="....">
-            <br>
-            <br>
-            <label for="star"></label>
-            <select id="star" name="star">
-                <option value="5">★★★★★</option>
-                <option value="4">★★★★</option>
-                <option value="3">★★★</option>
-                <option value="2">★★</option>
-                <option value="1">★</option>
-                <option value="0">☆</option>
-            </select>
-            <br>
-            <br> <input class="submit" type="submit">
-        </div>
-        
+    <div class="breadcrumbs">
+        <a href="index.html">Home</a> <span>/</span> <span>Reviews</span> <span>/</span> <strong>Reverse: 1999</strong>
     </div>
+
+    <main class="review-content">
+        <div class="review-header">
+            <h1>Reverse: 1999</h1>
+            <div class="review-meta">
+                <span class="badge">Tactical Card RPG</span>
+                <span class="badge">Retro-Occult / 20th Century</span>
+                <span class="badge">Bluepoch</span>
+                <span class="badge">Full English Voice Acting</span>
+            </div>
+        </div>
+
+        <div class="video">
+            <iframe src="https://www.youtube-nocookie.com/embed/NAZyj0b_JKY" title="Reverse: 1999 Official Trailer" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <section class="section-block">
+            <h2>📖 Description</h2>
+            <p>Reverse: 1999 is a stylish 20th-century time-travel strategic RPG by Bluepoch. Marrying vintage Art Deco aesthetics with British theatre voice acting and occult mysticism, players manipulate arcanum card combinations in turn-based combat while investigating an inverted temporal storm.</p>
+        </section>
+
+        <section class="section-block">
+            <h2>🗡️ Story</h2>
+            <p>On the final day of the millennium—December 31, 1999—a supernatural phenomenon known as the "Storm" causes time to reverse, unwinding humanity backwards through eras like 1960s swinging London and the 1920s Roaring Twenties. Players step into the shoes of Vertin, the Timekeeper appointed by the St. Pavlov Foundation, who alone remains immune to temporal erasure as she seeks the truth behind the Storm and the enigmatic Manus Vindictae.</p>
+        </section>
+
+        <section class="section-block">
+            <h2>⭐ Verdict & Review</h2>
+            <div class="rating-score-box">
+                <strong>Our Score:</strong>
+                <span class="rating">★★★★★</span>
+                <span style="color: var(--accent-gold); font-weight: 700;">5.0 / 5.0 (Aesthetic Masterpiece)</span>
+            </div>
+            <p>Reverse: 1999 is one of the most culturally distinctive gacha RPGs ever released. Its cinematic Live2D art direction, jazz-infused vintage soundtrack, evocative prose, and card synthesis combat system create an irresistible atmosphere unlike anything else on the market.</p>
+        </section>
+
+        <section class="section-block">
+            <h2>🎮 Supported Platforms</h2>
+            <ul class="platform-list">
+                <li>PC (Official Windows Client)</li>
+                <li>Android (Google Play)</li>
+                <li>iOS (App Store)</li>
+            </ul>
+        </section>
+
+        <section class="section-block">
+            <h2>⚙️ System Requirements</h2>
+            <div class="specs-grid">
+                <div class="spec-card">
+                    <h3>PC Requirements</h3>
+                    <ul>
+                        <li>OS: Windows 10 64-bit</li>
+                        <li>CPU: Intel Core i5 or AMD Ryzen 5</li>
+                        <li>RAM: 8 GB</li>
+                        <li>GPU: NVIDIA GeForce GTX 1050 or AMD Radeon RX 560</li>
+                        <li>Storage: 15 GB free space</li>
+                    </ul>
+                </div>
+                <div class="spec-card">
+                    <h3>Mobile Requirements</h3>
+                    <ul>
+                        <li>Android: Snapdragon 730G / Dimensity 700 or higher</li>
+                        <li>iOS: iPhone 8 or newer with iOS 13.0+</li>
+                        <li>RAM: 3 GB minimum (4 GB recommended)</li>
+                        <li>Storage: 8 GB available internal storage</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="cta-wrapper">
+            <a href="https://re1999.bluepoch.com" target="_blank" rel="noopener noreferrer" class="play-button">
+                ⏳ Enter the Storm on Bluepoch.com
+            </a>
+        </div>
+
+        <!-- User Comments Section -->
+        <section class="section-block">
+            <div class="review-comments">
+                <h3>💬 Community Reviews & Comments</h3>
+                
+                <div class="review-comment">
+                    <div class="comment-header">
+                        <span class="comment-user">Timekeeper_Vertin</span>
+                        <span class="rating" style="font-size: 0.95rem;">★★★★★</span>
+                        <span class="comment-date">Verified Player</span>
+                    </div>
+                    <p>"The British voice acting and historical era aesthetics are phenomenal. Regulus, Sonetto, and Tooth Fairy are so wonderfully written."</p>
+                </div>
+
+                <div class="review-comment">
+                    <div class="comment-header">
+                        <span class="comment-user">Arcanist_Lover</span>
+                        <span class="rating" style="font-size: 0.95rem;">★★★★★</span>
+                        <span class="comment-date">Verified Player</span>
+                    </div>
+                    <p>"Merging spell cards to upgrade rank stars adds genuine strategic depth. The Live2D animation and jazz tavern music set an incredible mood."</p>
+                </div>
+
+                <div class="review-comment">
+                    <div class="comment-header">
+                        <span class="comment-user">VintageGamer_60s</span>
+                        <span class="rating" style="font-size: 0.95rem;">★★★★★</span>
+                        <span class="comment-date">Verified Player</span>
+                    </div>
+                    <p>"One of the few mobile RPGs where I never skip the story dialogue. Highly recommended for fans of mystery and historical fantasy."</p>
+                </div>
+            </div>
+
+            <div class="add-comment-card">
+                <h4>✍️ Add Your Review</h4>
+                <div class="form-group">
+                    <label for="username">Your Name / Arcanist Alias:</label>
+                    <input type="text" id="username" placeholder="e.g. TimeWalker" autocomplete="name">
+                </div>
+                <div class="form-group">
+                    <label for="usercomment">Your Thoughts / Critique:</label>
+                    <input class="usercomment" type="text" id="usercomment" name="usercomment" placeholder="What era or arcanist is your favorite?">
+                </div>
+                <div class="form-group">
+                    <label for="star">Your Rating:</label>
+                    <select class="star" id="star" name="star">
+                        <option value="5">★★★★★ (5/5 Masterpiece)</option>
+                        <option value="4">★★★★☆ (4/5 Great)</option>
+                        <option value="3">★★★☆☆ (3/5 Good)</option>
+                        <option value="2">★★☆☆☆ (2/5 Mediocre)</option>
+                        <option value="1">★☆☆☆☆ (1/5 Poor)</option>
+                    </select>
+                </div>
+                <button type="button" class="submit submit-btn">Submit Review ✨</button>
+            </div>
+        </section>
+
+    </main>
+    
     <footer id="socials-section">
         <p>Connect with Us:</p>
-        <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a> | <a href="#">YouTube</a>
-        <p>&copy; 2025 Cir Pink's. All rights reserved.</p>
+        <div style="margin-bottom: 1rem;">
+            <a href="Socials.html">Discord Community</a> | 
+            <a href="Socials.html">YouTube</a> | 
+            <a href="Socials.html">Twitter / X</a> | 
+            <a href="Socials.html">Instagram</a>
+        </div>
+        <p style="color: var(--text-muted); font-size: 0.82rem;">&copy; 2025 Cir Pink's Game Review Hub. All rights reserved.</p>
     </footer>
+
+    <button onclick="navigatePage('Home')" class="homes" title="Scroll to top" aria-label="Scroll to top">↑</button>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

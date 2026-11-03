@@ -3,62 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GameSphere - Socials</title>
-    <style>
-        body {
-            font-family: sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1em 0;
-        }
-
-        nav {
-            background-color: #444;
-            color: #fff;
-            padding: 0.5em 0;
-            text-align: center;
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            padding: 0 1em;
-        }
-
-        nav a:hover {
-            background-color: #555;
-        }
-
-        .container {
-            width: 80%;
-            margin: 20px auto;
-            text-align: center;
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1em 0;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <meta name="description" content="Connect with Cir Pink's Game Review Hub across Discord, YouTube, Twitter/X, Instagram, and GitHub.">
+    <title>Cir Pink's - Community & Socials</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" type="text/css" href="stylesabout.css">
     <script>
         function navigatePage(page) {
             let pageURLs = {
                 "Home": "index.html",
-                "Socials": "socials.html",
-                "About": "about.html"
+                "Socials": "Socials.html",
+                "About": "About.html"
             };
 
             if (pageURLs[page]) {
@@ -72,30 +26,93 @@
 <body>
 
     <header>
-        <h1>GameSphere</h1>
+        <div class="brand-wrapper">
+            <img src="assets/images/logo.svg" alt="Game Review Hub Logo" class="brand-icon">
+            <h1>Cir Pink's</h1>
+        </div>
         <p>Your Ultimate Game Review Hub</p>
     </header>
 
-    <nav>
-        <a href="#" onclick="navigatePage('Home')">Home</a>
-        <a href="#" onclick="navigatePage('Socials')">Socials</a>
-        <a href="#" onclick="navigatePage('About')">About</a>
+    <nav aria-label="Main navigation">
+        <ul>
+            <li><a href="index.html" onclick="navigatePage('Home'); return false;">Home</a></li>
+            <li><a href="Socials.html" class="active" onclick="navigatePage('Socials'); return false;">Socials</a></li>
+            <li><a href="About.html" onclick="navigatePage('About'); return false;">About</a></li>
+        </ul>
     </nav>
 
-    <div class="container">
-        <h2>Connect with Us!</h2>
-        <p>Follow us on our social media platforms for the latest updates:</p>
-        <ul>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">YouTube</a></li>
-        </ul>
-    </div>
+    <main class="container">
+        
+        <article class="about-card" style="text-align: center;">
+            <h2>🌐 Connect With Our Community</h2>
+            <p>Join thousands of fellow gamers discussing new releases, sharing builds, and voting on the next games we should review. Pick your favorite platform below:</p>
+        </article>
 
-    <footer>
-        <p>&copy; 2024 GameSphere. All rights reserved.</p>
+        <section class="social-cards-grid" aria-label="Social media channels">
+            
+            <!-- Discord -->
+            <a href="https://discord.com" target="_blank" rel="noopener noreferrer" class="social-card">
+                <div class="social-card-icon">💬</div>
+                <h3>Discord Server</h3>
+                <p>Join real-time voice & text chats, LFG channels, and weekly game nights.</p>
+                <span class="social-btn">Join 2.5K+ Members</span>
+            </a>
+
+            <!-- YouTube -->
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-card">
+                <div class="social-card-icon">📺</div>
+                <h3>YouTube Channel</h3>
+                <p>In-depth video critiques, 4K performance benchmarks, and video essays.</p>
+                <span class="social-btn">Subscribe</span>
+            </a>
+
+            <!-- Twitch -->
+            <a href="https://twitch.tv" target="_blank" rel="noopener noreferrer" class="social-card">
+                <div class="social-card-icon">🎮</div>
+                <h3>Twitch Live Stream</h3>
+                <p>Catch first playthroughs, live review discussions, and community Q&As.</p>
+                <span class="social-btn">Watch Live</span>
+            </a>
+
+            <!-- Twitter / X -->
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-card">
+                <div class="social-card-icon">🐦</div>
+                <h3>Twitter / X</h3>
+                <p>Daily gaming news, rapid-fire first impressions, and poll updates.</p>
+                <span class="social-btn">Follow @CirPink</span>
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-card">
+                <div class="social-card-icon">📸</div>
+                <h3>Instagram</h3>
+                <p>Gaming setup inspiration, cinematic game photography, and trailers.</p>
+                <span class="social-btn">Follow @cirpink_hub</span>
+            </a>
+
+            <!-- GitHub -->
+            <a href="https://github.com/Jaijai541/Game-Review" target="_blank" rel="noopener noreferrer" class="social-card">
+                <div class="social-card-icon">⚡</div>
+                <h3>GitHub Project</h3>
+                <p>Contribute reviews, report typos, or fork our open-source review platform.</p>
+                <span class="social-btn">Star on GitHub ⭐</span>
+            </a>
+
+        </section>
+
+    </main>
+
+    <footer id="socials-section">
+        <p>Connect with Us:</p>
+        <div style="margin-bottom: 1rem;">
+            <a href="Socials.html">Discord Community</a> | 
+            <a href="Socials.html">YouTube</a> | 
+            <a href="Socials.html">Twitter / X</a> | 
+            <a href="Socials.html">Instagram</a>
+        </div>
+        <p style="color: var(--text-muted); font-size: 0.82rem;">&copy; 2025 Cir Pink's Game Review Hub. All rights reserved.</p>
     </footer>
 
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

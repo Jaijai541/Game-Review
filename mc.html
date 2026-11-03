@@ -3,26 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minecraft - Review</title>
-    <link rel="stylesheet" type="text/css" href="stylesz.css"/>
-    <style>
-        
-    </style>
+    <meta name="description" content="In-depth review of Minecraft: Java & Bedrock Edition. Infinite block building, survival crafting, Redstone engineering, and system requirements.">
+    <title>Minecraft - Review | Cir Pink's</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" type="text/css" href="stylesz.css">
     <script>
         function navigatePage(page) {
             let pageURLs = {
-                "Home": "Game Review.html",
-                "Socials": "#socials-section",
+                "Home": "index.html",
+                "Socials": "Socials.html",
                 "About": "About.html"
             };
 
             if (pageURLs[page]) {
-                if (page === "#socials-section"){
-                    window.location.href = pageURLs[page];
-                } else {
-                    window.location.href = pageURLs[page];
-                }
-
+                window.location.href = pageURLs[page];
+            } else if (page === "#socials-section") {
+                const el = document.getElementById("socials-section");
+                if (el) el.scrollIntoView({ behavior: "smooth" });
             } else {
                 alert("Page not available.");
             }
@@ -31,111 +28,173 @@
 </head>
 <body>
     <header>
-        <h1>Cir Pink's</h1>
+        <div class="brand-wrapper">
+            <img src="assets/images/logo.svg" alt="Game Review Hub Logo" class="brand-icon">
+            <h1>Cir Pink's</h1>
+        </div>
         <p>Your Ultimate Game Review Hub</p>
     </header>
-    <nav>
+
+    <nav aria-label="Main navigation">
         <ul>
-            <a href="#" onclick="navigatePage('Home')">Home</a>
-            <a href="#socials-section" onclick="navigatePage('Socials')">Socials</a>
-            <a href="#" onclick="navigatePage('About')">About</a>
+            <li><a href="index.html" onclick="navigatePage('Home'); return false;">Home</a></li>
+            <li><a href="Socials.html" onclick="navigatePage('Socials'); return false;">Socials</a></li>
+            <li><a href="About.html" onclick="navigatePage('About'); return false;">About</a></li>
         </ul>
     </nav>
-    <div class="review-content">
-        <h1>Minecraft</h1>
-        <div class="video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/r6Ja2ZxWbRE?si=iqe4rx_KLQxSkrR2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        
-        </div>
-        <h2>Description</h2>
-        
-        <p>Minecraft is a sandbox video game that allows players to build with a variety of 3D blocks in a procedurally generated world, requiring creativity from players. It has survival, and creative modes, and allows for multiplayer.</p>
-        <h2>Story</h2>
-        
-        <p>Minecraft has a very light narrative, told through in game items, and environment. The end game goal is to defeat the ender dragon, and explore the end dimension. The game is mostly about the player creating their own story, and experiencing the world.</p>
-        <h2>Review</h2>
-        
-        <h2>Platform</h2>
-        <ul>
-            <li>Android</li>
-            <li>iOS</li>
-            <li>PC</li>
-            <li>Nintendo Switch</li>
-            <li>Wii U</li>
-            <li>3DS</li>
-            <li>PS5</li>
-            <li>PS4</li>
-            <li>PS3</li>
-            <li>Playstation Vita</li>
-            <li>Xbox 360</li>
-            <li>Xbox One</li>
-        </ul>
 
-        <h2>Device Requirement</h2>
-        <p>On Android</p>
-        <ul>
-            <li>Android 9 or higher</li>
-            <li>OpenGL ES 3.1 or higher</li>
-            <li>2 GB RAM</li>
-            <li>4GB or more ROM</li>
-        </ul>
-
-        <p>On iOS</p>
-        <ul>
-            <li>iOS 13/iPadOS13 or higher</li>
-            <li>2 GB RAM</li>
-            <li>4GB or more ROM</li>
-        </ul>
-
-        <p>On PC</p>
-        <ul>
-            <li>Windows 10 with 64-bit processor or higher</li>
-            <li>Intel HD 4000 or Radeon R5 220, Intel Celeron J4105 or FX-4100</li>
-            <li>2GB RAM</li>
-            <li>8GB or more ROM</li>
-        </ul>
-        
-        <p><strong>Rating:</strong> <span class="rating">★★★★★</span></p>
-        <a href="https://www.minecraft.net/" class="play-button">Play the Game</a>
-        <br></br>
-        <div class="review-comments">
-            <h3>User Comments:</h3>
-            <div class="review-comment">
-                <p>"Endless creativity and exploration, a true sandbox gem."</p>
-                <p> - User1</p>
-            </div>
-            <div class="review-comment">
-                <p>"Simple yet profound, a game for all imaginations."</p>
-                <p> - User2</p>
-            </div>
-            <div class="review-comment">
-                <p>"Community driven, constantly evolving, and always surprising."</p>
-                <p> - User3</p>
-            </div>
-        </div>
-
-        <div>
-            <label for="usercomment"><h4>Add a Comment</h4></label>
-            <input type="text" id="usercomment" name="usercomment" style="width:300px; height: 30px; font-size: 20px;" placeholder="....">
-            <br>
-            <br>
-            <label for="star"></label>
-            <select id="star" name="star">
-                <option value="5">★★★★★</option>
-                <option value="4">★★★★</option>
-                <option value="3">★★★</option>
-                <option value="2">★★</option>
-                <option value="1">★</option>
-                <option value="0">☆</option>
-            </select>
-            <br>
-            <br> <input class="submit" type="submit">
-        </div>
-        
+    <div class="breadcrumbs">
+        <a href="index.html">Home</a> <span>/</span> <span>Reviews</span> <span>/</span> <strong>Minecraft</strong>
     </div>
+
+    <main class="review-content">
+        <div class="review-header">
+            <h1>Minecraft</h1>
+            <div class="review-meta">
+                <span class="badge">Sandbox Survival</span>
+                <span class="badge">Infinite Voxel World</span>
+                <span class="badge">Mojang Studios</span>
+                <span class="badge">Best-Selling Game of All Time</span>
+            </div>
+        </div>
+
+        <div class="video">
+            <iframe src="https://www.youtube-nocookie.com/embed/r6Ja2ZxWbRE" title="Minecraft Official Trailer" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <section class="section-block">
+            <h2>📖 Description</h2>
+            <p>Minecraft is the best-selling video game in history. A landmark voxel sandbox experience, it grants players boundless freedom to mine materials, engineer intricate redstone computers, construct architectural marvels, and survive against night-stalking monsters in procedurally generated infinite worlds.</p>
+        </section>
+
+        <section class="section-block">
+            <h2>🗡️ Story & Progression</h2>
+            <p>Minecraft adopts a subtle, player-driven narrative told through environmental exploration and archaeology. Guided by in-game advancements, players progress from punching trees to forging Netherite armor, exploring ancient cities guarded by the Warden, brewing alchemy potions, and journeying to the End dimension to triumph against the Ender Dragon.</p>
+        </section>
+
+        <section class="section-block">
+            <h2>⭐ Verdict & Review</h2>
+            <div class="rating-score-box">
+                <strong>Our Score:</strong>
+                <span class="rating">★★★★★</span>
+                <span style="color: var(--accent-gold); font-weight: 700;">5.0 / 5.0 (Timeless Masterpiece)</span>
+            </div>
+            <p>Minecraft transcends gaming—it is a digital canvas, an educational platform, and an infinite playground. With fifteen years of continuous free updates, a vibrant modding ecosystem, cross-platform Bedrock multiplayer, and shaders that turn blocks into photo-realistic wonders, Minecraft remains unbeatable.</p>
+        </section>
+
+        <section class="section-block">
+            <h2>🎮 Supported Platforms</h2>
+            <ul class="platform-list">
+                <li>PC (Java & Bedrock Edition for Windows, Mac, Linux)</li>
+                <li>PlayStation 5 / PlayStation 4</li>
+                <li>Xbox Series X/S / Xbox One</li>
+                <li>Nintendo Switch</li>
+                <li>Android & iOS (Pocket Edition)</li>
+            </ul>
+        </section>
+
+        <section class="section-block">
+            <h2>⚙️ System Requirements</h2>
+            <div class="specs-grid">
+                <div class="spec-card">
+                    <h3>PC Requirements</h3>
+                    <ul>
+                        <li>OS: Windows 10/11 64-bit</li>
+                        <li>CPU: Intel Core i5-4690 or AMD A10-7800</li>
+                        <li>RAM: 4 GB (8 GB recommended for modded / render distance)</li>
+                        <li>GPU: GeForce 700 Series or AMD Radeon R7 Series</li>
+                        <li>Storage: 4 GB SSD storage</li>
+                    </ul>
+                </div>
+                <div class="spec-card">
+                    <h3>Mobile Requirements</h3>
+                    <ul>
+                        <li>Android: Version 9.0+ with OpenGL ES 3.1+</li>
+                        <li>iOS: iOS 13.0 or higher</li>
+                        <li>RAM: 2 GB minimum (4 GB recommended)</li>
+                        <li>Storage: 2 GB available storage</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="cta-wrapper">
+            <a href="https://www.minecraft.net" target="_blank" rel="noopener noreferrer" class="play-button">
+                ⛏️ Play Minecraft
+            </a>
+        </div>
+
+        <!-- User Comments Section -->
+        <section class="section-block">
+            <div class="review-comments">
+                <h3>💬 Community Reviews & Comments</h3>
+                
+                <div class="review-comment">
+                    <div class="comment-header">
+                        <span class="comment-user">RedstoneEngineer_99</span>
+                        <span class="rating" style="font-size: 0.95rem;">★★★★★</span>
+                        <span class="comment-date">Verified Player</span>
+                    </div>
+                    <p>"I've been playing since the alpha release in 2011. Redstone mechanics literally taught me boolean logic, which led me to study computer science. 10/10 game."</p>
+                </div>
+
+                <div class="review-comment">
+                    <div class="comment-header">
+                        <span class="comment-user">BuilderSteve</span>
+                        <span class="rating" style="font-size: 0.95rem;">★★★★★</span>
+                        <span class="comment-date">Verified Player</span>
+                    </div>
+                    <p>"The ambient soundtrack by C418 and Lena Raine combined with a sunset over mountain biomes is therapy. Endless creativity for any age."</p>
+                </div>
+
+                <div class="review-comment">
+                    <div class="comment-header">
+                        <span class="comment-user">HardcoreSurvivor</span>
+                        <span class="rating" style="font-size: 0.95rem;">★★★★★</span>
+                        <span class="comment-date">Verified Player</span>
+                    </div>
+                    <p>"Trial Chambers in recent updates bring back authentic dungeon-crawling excitement. The best co-op game with friends ever made."</p>
+                </div>
+            </div>
+
+            <div class="add-comment-card">
+                <h4>✍️ Add Your Review</h4>
+                <div class="form-group">
+                    <label for="username">Your Name / Miner Tag:</label>
+                    <input type="text" id="username" placeholder="e.g. BlockMaster" autocomplete="name">
+                </div>
+                <div class="form-group">
+                    <label for="usercomment">Your Thoughts / Critique:</label>
+                    <input class="usercomment" type="text" id="usercomment" name="usercomment" placeholder="What are your favorite builds or memories in Minecraft?">
+                </div>
+                <div class="form-group">
+                    <label for="star">Your Rating:</label>
+                    <select class="star" id="star" name="star">
+                        <option value="5">★★★★★ (5/5 Masterpiece)</option>
+                        <option value="4">★★★★☆ (4/5 Great)</option>
+                        <option value="3">★★★☆☆ (3/5 Good)</option>
+                        <option value="2">★★☆☆☆ (2/5 Mediocre)</option>
+                        <option value="1">★☆☆☆☆ (1/5 Poor)</option>
+                    </select>
+                </div>
+                <button type="button" class="submit submit-btn">Submit Review ✨</button>
+            </div>
+        </section>
+
+    </main>
+    
     <footer id="socials-section">
         <p>Connect with Us:</p>
-        <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a> | <a href="#">YouTube</a>
-        <p>&copy; 2025 Cir Pink's. All rights reserved.</p>
+        <div style="margin-bottom: 1rem;">
+            <a href="Socials.html">Discord Community</a> | 
+            <a href="Socials.html">YouTube</a> | 
+            <a href="Socials.html">Twitter / X</a> | 
+            <a href="Socials.html">Instagram</a>
+        </div>
+        <p style="color: var(--text-muted); font-size: 0.82rem;">&copy; 2025 Cir Pink's Game Review Hub. All rights reserved.</p>
     </footer>
+
+    <button onclick="navigatePage('Home')" class="homes" title="Scroll to top" aria-label="Scroll to top">↑</button>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
